@@ -40,6 +40,11 @@ h1,h2,h3,h4,h5,h6{font-weight: 500;}
 .visible{visibility: visible !important;}
 .hidden{visibility: hidden !important;}
 
+/*color*/
+.color-dg{color:#00afc7 !important;}
+.color-fo{color:#ffb436 !important;}
+.color-o{color:#ff8300 !important;}
+.bg-w{background-color: #fff !important;}
 /*base*/
 .fs-20 {
   font-size: 0.26667rem !important;
