@@ -2,7 +2,7 @@
   <div class="bg-w mgt-20">
     <h3 class="title">热门推荐</h3>
     <ul>
-      <li class="detail" v-for="item in addrList" :key="item.id">
+      <li class="detail" v-for="item in addrDetail" :key="item.id">
         <div class="left"><img :src="item.imgUrl"></div>
         <div class="right">
           <h5 class="color-dg mgt-20 fs-30">{{item.title}}</h5>
@@ -15,35 +15,11 @@
 </template>
 
 <script>
-let addrList = [
-  {
-    id: '0001', imgUrl: '../../../static/images/10.jpg', title: '温泉假日酒店', star: '★★★★★', talk: '65条评论', money: '40'
-  },
-  {
-    id: '0002', imgUrl: '../../../static/images/10.jpg', title: '温泉假日酒店', star: '★★★★★', talk: '65条评论', money: '40'
-  },
-  {
-    id: '0003', imgUrl: '../../../static/images/10.jpg', title: '温泉假日酒店', star: '★★★★★', talk: '65条评论', money: '40'
-  },
-  {
-    id: '0004', imgUrl: '../../../static/images/10.jpg', title: '温泉假日酒店', star: '★★★★★', talk: '65条评论', money: '40'
-  },
-  {
-    id: '0005', imgUrl: '../../../static/images/10.jpg', title: '温泉假日酒店', star: '★★★★★', talk: '65条评论', money: '40'
-  },
-  {
-    id: '0006', imgUrl: '../../../static/images/10.jpg', title: '温泉假日酒店', star: '★★★★★', talk: '65条评论', money: '40'
-  },
-  {
-    id: '0007', imgUrl: '../../../static/images/10.jpg', title: '温泉假日酒店', star: '★★★★★', talk: '65条评论', money: '40'
-  }
-]
+
 export default {
   name: 'HomeDetail',
-  data: function () {
-    return {
-      addrList
-    }
+  props: {
+    addrDetail: Array
   }
 }
 </script>

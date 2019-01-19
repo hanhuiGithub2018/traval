@@ -2,13 +2,16 @@
   <div class="header">
     <a href="#" class="arrow-back"></a>
     <input type="text" class="search" placeholder="输入城市/美食/旅游景点">
-    <a href="#" class="position">三亚</a>
+    <a href="#" class="position">{{city}}</a>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HoneHeader'
+  name: 'HoneHeader',
+  props: {
+    city: String
+  }
 }
 </script>
 
